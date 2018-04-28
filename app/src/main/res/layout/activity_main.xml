@@ -18,6 +18,7 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <!-- Image source: https://pixnio.com/fauna-animals/dogs/dogs-grass-pets-wood-shade-backyard -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <!-- Image source: https://openclipart.org/detail/177208/map-location -->
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
