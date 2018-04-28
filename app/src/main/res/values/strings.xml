@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PetShop</string>
+
+    <string name="business_name">Elizabeth\'s Pet Shop</string>
+    <string name="dog_image_description">Yellow Labrador Retriever</string>
+    <string name="map_pin_description">Map pin</string>
+    <string name="slogan">Let us help you find your next best friend</string>
+    <string name="address">123 Main Street\nLos Angeles, CA 90001</string>
+    <string name="days">Open Tuesday — Saturday</string>
+    <string name="hours">8am — 5pm</string>
+    <string name="contact">Contact Us</string>
+    <string name="phone">650—555—5555</string>
+    <string name="website">www.petshop.com</string>
+    <string name="email">elizabethspetshop@gmail.com</string>
+</resources>
