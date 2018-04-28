@@ -2,7 +2,7 @@
     <string name="app_name">PetShop</string>
 
     <string name="business_name">Elizabeth\'s Pet Shop</string>
-    <string name="dog_image_description">Yellow Labrador Retriever</string>
+    <string name="dog_image_description">Golden Labrador Retriever</string>
     <string name="map_pin_description">Map pin</string>
     <string name="slogan">Let us help you find your next best friend</string>
     <string name="address">123 Main Street\nLos Angeles, CA 90001</string>
