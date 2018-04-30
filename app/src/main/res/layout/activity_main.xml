@@ -1,135 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:orientation="vertical"
+    android:fillViewport="true"
     tools:context="com.example.android.petshop.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/business_name"
-        android:textColor="@android:color/black"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <!-- Image source: https://pixnio.com/fauna-animals/dogs/dogs-grass-pets-wood-shade-backyard -->
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/dog_image_description"
-        android:src="@drawable/dogs" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/slogan"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="italic" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <!-- Image source: https://openclipart.org/detail/177208/map-location -->
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/map_pin_description"
-            android:src="@drawable/mappin" />
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:autoLink="map"
-            android:text="@string/address"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/business_name"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <!-- Image source: https://pixnio.com/fauna-animals/dogs/dogs-grass-pets-wood-shade-backyard -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/dog_image_description"
+            android:src="@drawable/dogs" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/slogan_margins"
+            android:layout_marginTop="@dimen/slogan_margins"
+            android:text="@string/slogan"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Image source: https://openclipart.org/detail/177208/map-location -->
+            <ImageView
+                android:layout_width="@dimen/map_width_height"
+                android:layout_height="@dimen/map_width_height"
+                android:layout_marginLeft="@dimen/map_margin_left_start"
+                android:layout_marginStart="@dimen/map_margin_left_start"
+                android:layout_marginTop="@dimen/map_margin_top"
+                android:contentDescription="@string/map_pin_description"
+                android:src="@drawable/mappin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/address_margins"
+                android:layout_marginLeft="@dimen/address_margins"
+                android:layout_marginStart="@dimen/address_margins"
+                android:layout_marginTop="@dimen/address_margins"
+                android:autoLink="map"
+                android:text="@string/address"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/days_margin_top"
+            android:text="@string/days"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/hours_margin_bottom"
+            android:text="@string/hours"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height"
+            android:layout_marginLeft="@dimen/view_margins"
+            android:layout_marginRight="@dimen/view_margins"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/contact_margin_bottom"
+            android:layout_marginLeft="@dimen/contact_margin_left_start"
+            android:layout_marginStart="@dimen/contact_margin_left_start"
+            android:layout_marginTop="@dimen/contact_margin_top"
+            android:text="@string/contact"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/info_margin_bottom"
+            android:layout_marginLeft="@dimen/info_margin_left_start"
+            android:layout_marginStart="@dimen/info_margin_left_start"
+            android:layout_marginTop="@dimen/info_margin_top"
+            android:autoLink="phone"
+            android:text="@string/phone"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/info_margin_bottom"
+            android:layout_marginLeft="@dimen/info_margin_left_start"
+            android:layout_marginStart="@dimen/info_margin_left_start"
+            android:autoLink="web"
+            android:text="@string/website"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/info_margin_bottom"
+            android:layout_marginLeft="@dimen/info_margin_left_start"
+            android:layout_marginStart="@dimen/info_margin_left_start"
+            android:autoLink="email"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:text="@string/days"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="8dp"
-        android:text="@string/hours"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@android:color/darker_gray" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/contact"
-        android:textAllCaps="true"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="8dp"
-        android:autoLink="phone"
-        android:text="@string/phone"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="25dp"
-        android:autoLink="web"
-        android:text="@string/website"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="25dp"
-        android:autoLink="email"
-        android:text="@string/email"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
-</LinearLayout>
+</ScrollView>
